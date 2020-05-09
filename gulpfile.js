@@ -14,4 +14,17 @@ function style() {
     .pipe(browserSync.stream());
 }
 
+function watch() {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    });
+
+    gulp.watch('./sass/**/*.sass', style);
+    gulp.watch('./*html').on('change', browserSync.reload);
+    gulp.watch('./*.js').on('change', browserSync.reload);
+}
+
 exports.style = style;
+exports.watch = watch;
