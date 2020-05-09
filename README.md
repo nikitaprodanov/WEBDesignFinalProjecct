@@ -1,2 +1,2 @@
 # WEBDesignFinalProjecct
-This is a public repository for my final school project for the `WEB Design` course in ELSYS(TUES) - Technological school "Electronic systems".
+Web site that will help you get in the best shape of your life
