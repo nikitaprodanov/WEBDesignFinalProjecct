@@ -10,6 +10,8 @@ function style() {
     .pipe(sass())
     //  where do I save the compiled CSS
     .pipe(gulp.dest('./css'))
+    // stream changes to all browsers
+    .pipe(browserSync.stream());
 }
 
 exports.style = style;
