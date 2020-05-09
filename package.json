@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/uchihanaruto9371/WEBDesignFinalProjecct/issues"
   },
-  "homepage": "https://github.com/uchihanaruto9371/WEBDesignFinalProjecct#readme"
+  "homepage": "https://github.com/uchihanaruto9371/WEBDesignFinalProjecct#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
 }
