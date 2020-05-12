@@ -10,11 +10,32 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 header{
-    background: black;
+    background: #95e675;
     display: flex;
-    .name{
-        margin-left: 100px;
-        font-size: 40px;
+    justify-content: space-between;
+    p{
+        margin: 32px;
+        margin-left: 50px;
+        font-size: 36px;
+        font-weight: bold;
         text-align: center;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        li{
+            background-color: #17b978;
+            margin: 8px;
+            margin-right: 20px;
+            padding-left: 36px;
+            padding-right: 36px;
+            font-size: 36px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+        }
     }
 }
