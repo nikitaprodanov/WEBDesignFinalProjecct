@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Acme:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Acme';
+}
+
+body{
+    background: #95e675;
+    background: -moz-linear-gradient(45deg, #95e675 0%, #17b978 100%);
+    background: -webkit-linear-gradient(45deg, #95e675 0%, #17b978 100%);
+    background: linear-gradient(45deg, #95e675 0%, #17b978 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: #95e675;
+        .logo{
+            letter-spacing: 4px;
+            font-size: 22px;
+        }
+        .nav-links{
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+            list-style: none;
+            a{
+                text-decoration: none;
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
+            // .link{
+            //     background-color: #17b978;
+            //     padding-top: 2vh;
+            //     padding-bottom: 2vh;
+            //     padding-right: 2.5vw;
+            //     padding-left: 2.5vw;
+            // }
+        }
+    }
+}
