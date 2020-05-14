@@ -19,7 +19,7 @@ body {
     background-color: #95e675; }
     body nav .logo {
       letter-spacing: 4px;
-      font-size: 22px; }
+      font-size: 20px; }
     body nav .nav-links {
       display: flex;
       justify-content: space-around;
@@ -28,4 +28,5 @@ body {
       body nav .nav-links a {
         text-decoration: none;
         letter-spacing: 2px;
-        font-weight: bold; }
+        font-weight: bold;
+        font-size: 14px; }
