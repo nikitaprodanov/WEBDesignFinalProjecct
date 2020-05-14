@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between; }
   header p {
-    margin: 32px;
+    margin: 2em;
     margin-left: 50px;
     font-size: 36px;
     font-weight: bold;
