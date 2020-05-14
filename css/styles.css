@@ -29,4 +29,16 @@ body {
         text-decoration: none;
         letter-spacing: 2px;
         font-weight: bold;
-        font-size: 14px; }
+        font-size: 14px;
+        color: #000; }
+    body nav .burger {
+      display: none; }
+      body nav .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px; }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-family: sans-serif; } }
