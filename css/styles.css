@@ -38,7 +38,8 @@ body {
         height: 3px;
         background-color: #000;
         margin: 5px; }
-
-@media screen and (max-width: 768px) {
-  body {
-    font-family: sans-serif; } }
+  @media (max-width: 1024px) {
+    body {
+      color: rebeccapurple; }
+      body nav .nav-links {
+        width: 40%; } }

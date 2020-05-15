@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Acme:400,700');
 
+$mobile: 780px;
+$tablet: 1024px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}){
+        @content;
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -35,13 +50,6 @@ body{
                 font-size: 14px;
                 color: #000;
             }
-            // .link{
-            //     background-color: #17b978;
-            //     padding-top: 2vh;
-            //     padding-bottom: 2vh;
-            //     padding-right: 2.5vw;
-            //     padding-left: 2.5vw;
-            // }
         }
         .burger{
             display: none;
@@ -53,10 +61,15 @@ body{
             }
         }
     }
-}
 
-@media screen and (max-width: 768px){
-    body{
-        font-family: sans-serif;
+    @include tablet{
+        color: rebeccapurple;
+        nav .nav-links{
+            width: 40%;
+        }
+    }
+
+    @include mobile{
+        
     }
 }
