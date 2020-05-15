@@ -40,6 +40,19 @@ body {
         margin: 5px; }
   @media (max-width: 1024px) {
     body {
-      color: rebeccapurple; }
+      color: rebeccapurple;
+      overflow-x: hidden; }
       body nav .nav-links {
         width: 40%; } }
+  @media (max-width: 780px) {
+    body nav .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #95e675;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%); } }
