@@ -48,6 +48,8 @@ body {
       body nav .nav-links {
         width: 40vw; } }
   @media (max-width: 780px) {
+    body body {
+      overflow-x: hidden; }
     body nav .nav-links {
       position: fixed;
       right: 0px;
@@ -59,5 +61,10 @@ body {
       align-items: center;
       width: 50%;
       transform: translateX(100%); }
+      body nav .nav-links li {
+        opacity: 0; }
     body nav .burger {
-      display: block; } }
+      display: block;
+      cursor: pointer; }
+    body nav .nav-active {
+      transform: translateX(0); } }
