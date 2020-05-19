@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Acme:400,700");
+html,
+body {
+  height: 100%; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -12,6 +15,7 @@ body {
   background: linear-gradient(45deg, #95e675 0%, #17b978 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 ); }
   body nav {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,7 +27,7 @@ body {
     body nav .nav-links {
       display: flex;
       justify-content: space-around;
-      width: 30%;
+      width: 30vw;
       list-style: none; }
       body nav .nav-links a {
         text-decoration: none;
@@ -33,20 +37,19 @@ body {
         color: #000; }
     body nav .burger {
       display: none; }
-      body nav .burger div {
+      body nav .burger .line {
         width: 25px;
         height: 3px;
         background-color: #000;
         margin: 5px; }
   @media (max-width: 1024px) {
     body {
-      color: rebeccapurple;
-      overflow-x: hidden; }
+      color: rebeccapurple; }
       body nav .nav-links {
-        width: 40%; } }
+        width: 40vw; } }
   @media (max-width: 780px) {
     body nav .nav-links {
-      position: absolute;
+      position: fixed;
       right: 0px;
       height: 92vh;
       top: 8vh;
@@ -55,4 +58,6 @@ body {
       flex-direction: column;
       align-items: center;
       width: 50%;
-      transform: translateX(100%); } }
+      transform: translateX(100%); }
+    body nav .burger {
+      display: block; } }
