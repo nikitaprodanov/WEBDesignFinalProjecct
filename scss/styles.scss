@@ -67,7 +67,6 @@ body{
     }
 
     @include tablet{
-        color: rebeccapurple;
         nav .nav-links{
             width: 40vw;
         }
@@ -88,9 +87,10 @@ body{
             align-items: center;
             width: 50%;
             transform: translateX(100%);
-
+            transition: transform 0.5s ease-in;
             li {
                 opacity: 0;
+                transition: opacity 1s ease-in;
             }
         }
         nav .burger{
@@ -100,6 +100,9 @@ body{
 
         nav .nav-active{
             transform: translateX(0);
+            li{
+                opacity: 1;
+            }
         }
     }
 }
