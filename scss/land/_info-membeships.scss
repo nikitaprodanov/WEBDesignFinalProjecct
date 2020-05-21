@@ -1,0 +1,34 @@
+.memberships {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+
+    .our-memberships {
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card {
+            height: 20vw;
+            width: 20vw;
+            background-color: color(card-content);
+
+            @include tablet {
+                width: 40vw;
+                height: 40vw;
+            }
+
+            @include mobile {
+                width: 60vw;
+                height: 60vw;
+            }
+        }
+    }
+}

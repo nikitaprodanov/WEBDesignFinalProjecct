@@ -114,7 +114,7 @@ a {
 
 .info-board {
   background-image: url("../../images/th.jpeg");
-  height: 90vh;
+  height: 92vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,23 +122,57 @@ a {
   z-index: -1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: center; }
   .info-board .information {
     background-color: rgba(178, 231, 157, 0.45);
     width: 50vw;
     line-height: 25px;
-    padding: 10px; }
+    padding: 5vh; }
     .info-board .information h2 {
       font-size: 40px;
       text-align: center;
       margin: 30px; }
     .info-board .information p {
-      font-size: 18px;
       margin: 30px;
+      line-height: 5h;
+      font-size: 20px;
       text-align: center; }
     @media (max-width: 780px) {
       .info-board .information {
-        width: 80vw; } }
+        width: 80vw;
+        line-height: 5vw; }
+        .info-board .information h2 {
+          font-size: 30px;
+          margin: 20px; }
+        .info-board .information p {
+          font-size: 4vw;
+          margin: auto; } }
+
+.memberships {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-around; }
+  .memberships .our-memberships {
+    text-align: center;
+    font-size: 40px; }
+  .memberships .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .memberships .cards .card {
+      height: 20vw;
+      width: 20vw;
+      background-color: #53A1A8; }
+      @media (max-width: 1024px) {
+        .memberships .cards .card {
+          width: 40vw;
+          height: 40vw; } }
+      @media (max-width: 780px) {
+        .memberships .cards .card {
+          width: 60vw;
+          height: 60vw; } }
 
 .footer-container {
   background-color: #17b978;
