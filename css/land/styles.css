@@ -108,8 +108,17 @@ a {
   background-color: #000;
   margin: 5px; }
 
-.main-container {
-  height: 92vh; }
-
 .footer-container {
-  background-color: #17b978; }
+  background-color: #17b978;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1; }
+  .footer-container h3 {
+    margin-right: 10vw; }
+  .footer-container h4 {
+    margin-left: 10vw; }
