@@ -1,5 +1,10 @@
+.plans-link {
+    cursor: pointer;
+}
+
 .dropdown-plans {
     display: none;
+    cursor: pointer;
 
     li {
         background-color: color(secondary);

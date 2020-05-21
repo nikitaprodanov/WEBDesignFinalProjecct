@@ -1,3 +1,7 @@
+.site-container {
+  display: flex;
+  flex-direction: column; }
+
 html,
 body {
   height: 100%; }
@@ -31,8 +35,11 @@ nav {
     justify-content: space-around;
     width: 30vw;
     list-style: none; }
+    nav .nav-links .plans-link {
+      cursor: pointer; }
     nav .nav-links .dropdown-plans {
-      display: none; }
+      display: none;
+      cursor: pointer; }
       nav .nav-links .dropdown-plans li {
         background-color: #17b978; }
       nav .nav-links .dropdown-plans li:hover {
@@ -100,3 +107,9 @@ a {
   height: 3px;
   background-color: #000;
   margin: 5px; }
+
+.main-container {
+  height: 92vh; }
+
+.footer-container {
+  background-color: #17b978; }
