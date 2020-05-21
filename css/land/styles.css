@@ -108,6 +108,38 @@ a {
   background-color: #000;
   margin: 5px; }
 
+.main-container {
+  display: flex;
+  flex-direction: column; }
+
+.info-board {
+  background-image: url("../../images/th.jpeg");
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .info-board .information {
+    background-color: rgba(178, 231, 157, 0.45);
+    width: 50vw;
+    line-height: 25px;
+    padding: 10px; }
+    .info-board .information h2 {
+      font-size: 40px;
+      text-align: center;
+      margin: 30px; }
+    .info-board .information p {
+      font-size: 18px;
+      margin: 30px;
+      text-align: center; }
+    @media (max-width: 780px) {
+      .info-board .information {
+        width: 80vw; } }
+
 .footer-container {
   background-color: #17b978;
   position: relative;
