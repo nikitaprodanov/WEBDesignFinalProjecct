@@ -155,8 +155,12 @@ a {
   height: auto;
   justify-content: space-around; }
   .memberships .our-memberships {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    font-size: 40px; }
+    font-size: 40px;
+    height: 30vh; }
   .memberships .cards {
     display: flex;
     justify-content: space-around;
@@ -164,15 +168,80 @@ a {
     .memberships .cards .card {
       height: 20vw;
       width: 20vw;
-      background-color: #53A1A8; }
+      background-color: #53A1A8;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 5px 10px rgba(8, 105, 114, 0.6); }
+      @media (max-width: 780px) {
+        .memberships .cards .card {
+          box-shadow: 5px 5px rgba(8, 105, 114, 0.6); } }
+      .memberships .cards .card .card-price {
+        background-color: #086972;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .memberships .cards .card .card-price span {
+          color: whitesmoke;
+          font-size: 3.5vw; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .card-price span {
+              font-size: 6vw; } }
+      .memberships .cards .card .card-plan {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        .memberships .cards .card .card-plan span {
+          margin-left: 12%;
+          font-size: 2.5vw;
+          color: whitesmoke; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .card-plan span {
+              font-size: 3.5vw; } }
+      .memberships .cards .card .plan-bonuses {
+        display: flex;
+        flex-direction: column;
+        height: 35%; }
+        .memberships .cards .card .plan-bonuses span {
+          margin-left: 12%;
+          color: whitesmoke;
+          font-size: 1vw; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .plan-bonuses span {
+              font-size: 2vw; } }
+          @media (max-width: 780px) {
+            .memberships .cards .card .plan-bonuses span {
+              font-size: 2.5vw; } }
+      .memberships .cards .card .buy-button {
+        background-color: #086972;
+        width: 25%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center; }
+        .memberships .cards .card .buy-button a {
+          color: whitesmoke;
+          text-decoration: none;
+          font-size: 1vw; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .buy-button a {
+              font-size: 2vw; } }
+          @media (max-width: 780px) {
+            .memberships .cards .card .buy-button a {
+              font-size: 2.5vw; } }
       @media (max-width: 1024px) {
         .memberships .cards .card {
           width: 40vw;
-          height: 40vw; } }
+          height: 40vw;
+          margin: 20px; } }
       @media (max-width: 780px) {
         .memberships .cards .card {
           width: 60vw;
-          height: 60vw; } }
+          height: 60vw;
+          margin: 20px; } }
 
 .footer-container {
   background-color: #17b978;
