@@ -172,10 +172,10 @@ a {
       margin: 20px;
       display: flex;
       flex-direction: column;
-      box-shadow: 5px 10px rgba(8, 105, 114, 0.6); }
+      box-shadow: 10px 10px 20px rgba(8, 105, 114, 0.6); }
       @media (max-width: 780px) {
         .memberships .cards .card {
-          box-shadow: 5px 5px rgba(8, 105, 114, 0.6); } }
+          box-shadow: 5px 5px 20px rgba(8, 105, 114, 0.6); } }
       .memberships .cards .card .card-price {
         background-color: #086972;
         height: 30%;
