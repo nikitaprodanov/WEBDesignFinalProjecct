@@ -153,7 +153,8 @@ a {
   flex-wrap: wrap;
   flex-direction: column;
   height: auto;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-bottom: 30px; }
   .memberships .our-memberships {
     display: flex;
     flex-direction: column;
@@ -242,6 +243,24 @@ a {
           width: 60vw;
           height: 60vw;
           margin: 20px; } }
+
+.registration-form {
+  background-color: #000;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around; }
+  .registration-form .sign-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: whitesmoke; }
+    .registration-form .sign-text .sign-in {
+      text-align: center;
+      font-size: 4vw; }
+    .registration-form .sign-text .journey-text {
+      text-align: center;
+      width: 40vw;
+      font-size: 1.5vw; }
 
 .footer-container {
   background-color: #17b978;

@@ -1,0 +1,24 @@
+.registration-form {
+    background-color: color(text);
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+
+    .sign-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: color(text-white);
+
+        .sign-in {
+            text-align: center;
+            font-size: 4vw;
+        }
+
+        .journey-text {
+            text-align: center;
+            width: 40vw;
+            font-size: 1.5vw;
+        }
+    }
+}
