@@ -13,12 +13,22 @@
         .sign-in {
             text-align: center;
             font-size: 4vw;
+            margin: 1vw;
         }
 
         .journey-text {
             text-align: center;
             width: 40vw;
             font-size: 1.5vw;
+            margin: 1vw;
+
+            @include tablet {
+                font-size: 3vw;
+            }
+
+            @include mobile {
+                font-size: 3.5vw;
+            }
         }
     }
 }

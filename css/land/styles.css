@@ -256,11 +256,19 @@ a {
     color: whitesmoke; }
     .registration-form .sign-text .sign-in {
       text-align: center;
-      font-size: 4vw; }
+      font-size: 4vw;
+      margin: 1vw; }
     .registration-form .sign-text .journey-text {
       text-align: center;
       width: 40vw;
-      font-size: 1.5vw; }
+      font-size: 1.5vw;
+      margin: 1vw; }
+      @media (max-width: 1024px) {
+        .registration-form .sign-text .journey-text {
+          font-size: 3vw; } }
+      @media (max-width: 780px) {
+        .registration-form .sign-text .journey-text {
+          font-size: 3.5vw; } }
 
 .footer-container {
   background-color: #17b978;
