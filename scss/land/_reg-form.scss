@@ -12,23 +12,36 @@
 
         .sign-in {
             text-align: center;
-            font-size: 4vw;
-            margin: 1vw;
+            font-size: 7vw;
+            margin: 40px;
+
+            @include mobile {
+                margin: auto;
+            }
         }
 
         .journey-text {
             text-align: center;
             width: 40vw;
-            font-size: 1.5vw;
+            font-size: 24px;
             margin: 1vw;
 
             @include tablet {
-                font-size: 3vw;
+                width: 50vw;
             }
 
             @include mobile {
-                font-size: 3.5vw;
+                width: auto;
+                margin: auto;
             }
         }
     }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    @import 'form-fields';
 }
