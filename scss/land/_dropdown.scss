@@ -1,0 +1,47 @@
+.plans-link {
+    cursor: pointer;
+}
+
+.dropdown-plans {
+    display: none;
+    cursor: pointer;
+
+    li {
+        background-color: color(secondary);
+    }
+
+    li:hover {
+        background-color: color(primary);
+        transition: background-color 0.5s ease-in;
+    }
+
+    .dropdown-training {
+        display: none;
+    }
+
+    .dropdown-nutrition {
+        display: none;
+    }
+
+    .dropdown-training-active {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        list-style: none;
+    }
+    
+    .dropdown-nutrition-active {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        list-style: none;
+    }
+}
+
+.dropdown-plans-active {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}

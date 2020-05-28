@@ -1,0 +1,24 @@
+{
+  "name": "webdesignfinalprojecct",
+  "version": "1.0.0",
+  "description": "This is a public repository for my final school project for the `WEB Design` course in ELSYS(TUES) - Technological school \"Electronic systems\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uchihanaruto9371/WEBDesignFinalProjecct.git"
+  },
+  "author": "Nikita Prodanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uchihanaruto9371/WEBDesignFinalProjecct/issues"
+  },
+  "homepage": "https://github.com/uchihanaruto9371/WEBDesignFinalProjecct#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

@@ -1,0 +1,306 @@
+.site-container {
+  display: flex;
+  flex-direction: column; }
+
+html,
+body {
+  height: 100%; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Acme'; }
+
+body {
+  background: #95e675;
+  background: -moz-linear-gradient(45deg, #95e675 0%, #17b978 100%);
+  background: -webkit-linear-gradient(45deg, #95e675 0%, #17b978 100%);
+  background: linear-gradient(45deg, #95e675 0%, #17b978 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
+  overflow-x: hidden; }
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #95e675; }
+  nav .logo {
+    letter-spacing: 4px;
+    font-size: 20px; }
+  nav .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    list-style: none; }
+    nav .nav-links .plans-link {
+      cursor: pointer; }
+    nav .nav-links .dropdown-plans {
+      display: none;
+      cursor: pointer; }
+      nav .nav-links .dropdown-plans li {
+        background-color: #17b978; }
+      nav .nav-links .dropdown-plans li:hover {
+        background-color: #95e675;
+        transition: background-color 0.5s ease-in; }
+      nav .nav-links .dropdown-plans .dropdown-training {
+        display: none; }
+      nav .nav-links .dropdown-plans .dropdown-nutrition {
+        display: none; }
+      nav .nav-links .dropdown-plans .dropdown-training-active {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        list-style: none; }
+      nav .nav-links .dropdown-plans .dropdown-nutrition-active {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        list-style: none; }
+    nav .nav-links .dropdown-plans-active {
+      position: relative;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px; }
+  nav .burger {
+    display: none; }
+  @media (max-width: 1024px) {
+    nav .nav-links {
+      width: 40vw; } }
+  @media (max-width: 780px) {
+    nav .nav-links {
+      position: fixed;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #95e675;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s, background-color 0.3s ease-in; }
+      nav .nav-links li {
+        opacity: 0;
+        transition: opacity 1s ease-in; }
+    nav .burger {
+      display: block;
+      cursor: pointer; }
+    nav .nav-active {
+      transform: translateX(0);
+      background-color: #17b978; }
+      nav .nav-active li {
+        opacity: 1; } }
+
+a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000; }
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px; }
+
+.main-container {
+  display: flex;
+  flex-direction: column; }
+
+.info-board {
+  background-image: url("../../images/th.jpeg");
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .info-board .information {
+    background-color: rgba(178, 231, 157, 0.45);
+    width: 50vw;
+    line-height: 25px;
+    padding: 5vh; }
+    .info-board .information h2 {
+      font-size: 40px;
+      text-align: center;
+      margin: 30px; }
+    .info-board .information p {
+      margin: 30px;
+      line-height: 5h;
+      font-size: 20px;
+      text-align: center; }
+    @media (max-width: 780px) {
+      .info-board .information {
+        width: 80vw;
+        line-height: 5vw; }
+        .info-board .information h2 {
+          font-size: 30px;
+          margin: 20px; }
+        .info-board .information p {
+          font-size: 4vw;
+          margin: auto; } }
+
+.memberships {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-around;
+  margin-bottom: 30px; }
+  .memberships .our-memberships {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 40px;
+    height: 30vh; }
+  .memberships .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .memberships .cards .card {
+      height: 20vw;
+      width: 20vw;
+      background-color: #53A1A8;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 10px 10px 20px rgba(8, 105, 114, 0.6); }
+      @media (max-width: 780px) {
+        .memberships .cards .card {
+          box-shadow: 5px 5px 20px rgba(8, 105, 114, 0.6); } }
+      .memberships .cards .card .card-price {
+        background-color: #086972;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .memberships .cards .card .card-price span {
+          color: whitesmoke;
+          font-size: 3.5vw; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .card-price span {
+              font-size: 6vw; } }
+      .memberships .cards .card .card-plan {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        .memberships .cards .card .card-plan span {
+          margin-left: 12%;
+          font-size: 2.5vw;
+          color: whitesmoke; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .card-plan span {
+              font-size: 3.5vw; } }
+      .memberships .cards .card .plan-bonuses {
+        display: flex;
+        flex-direction: column;
+        height: 35%; }
+        .memberships .cards .card .plan-bonuses span {
+          margin-left: 12%;
+          color: whitesmoke;
+          font-size: 1vw; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .plan-bonuses span {
+              font-size: 2vw; } }
+          @media (max-width: 780px) {
+            .memberships .cards .card .plan-bonuses span {
+              font-size: 2.5vw; } }
+      .memberships .cards .card .buy-button {
+        background-color: #086972;
+        width: 25%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center; }
+        .memberships .cards .card .buy-button a {
+          color: whitesmoke;
+          text-decoration: none;
+          font-size: 1vw; }
+          @media (max-width: 1024px) {
+            .memberships .cards .card .buy-button a {
+              font-size: 2vw; } }
+          @media (max-width: 780px) {
+            .memberships .cards .card .buy-button a {
+              font-size: 2.5vw; } }
+      @media (max-width: 1024px) {
+        .memberships .cards .card {
+          width: 40vw;
+          height: 40vw;
+          margin: 20px; } }
+      @media (max-width: 780px) {
+        .memberships .cards .card {
+          width: 60vw;
+          height: 60vw;
+          margin: 20px; } }
+
+.registration-form {
+  background-color: #000;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around; }
+  .registration-form .sign-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: whitesmoke; }
+    .registration-form .sign-text .sign-in {
+      text-align: center;
+      font-size: 7vw;
+      margin: 40px; }
+      @media (max-width: 780px) {
+        .registration-form .sign-text .sign-in {
+          margin: auto; } }
+    .registration-form .sign-text .journey-text {
+      text-align: center;
+      width: 40vw;
+      font-size: 24px;
+      margin: 1vw; }
+      @media (max-width: 1024px) {
+        .registration-form .sign-text .journey-text {
+          width: 50vw; } }
+      @media (max-width: 780px) {
+        .registration-form .sign-text .journey-text {
+          width: auto;
+          margin: auto; } }
+  @media (max-width: 780px) {
+    .registration-form {
+      flex-direction: column;
+      align-items: center; } }
+  .registration-form .form-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10vw; }
+    .registration-form .form-fields .field {
+      width: 100%;
+      margin: 1vw;
+      text-decoration: underline; }
+    @media (max-width: 1024px) {
+      .registration-form .form-fields {
+        margin: auto; } }
+
+.footer-container {
+  background-color: #17b978;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1; }
+  .footer-container h3 {
+    margin-right: 10vw; }
+  .footer-container h4 {
+    margin-left: 10vw; }

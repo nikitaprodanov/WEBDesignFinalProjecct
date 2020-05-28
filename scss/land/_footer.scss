@@ -1,0 +1,19 @@
+.footer-container {
+    background-color: color(secondary);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+
+    h3 {
+        margin-right: 10vw;
+    }
+
+    h4 {
+        margin-left: 10vw;
+    }
+}
