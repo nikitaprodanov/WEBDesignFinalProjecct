@@ -1,0 +1,16 @@
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10vw;
+
+    .field {
+        width: 100%;
+        margin: 1vw;
+        text-decoration: underline;
+    }
+
+    @include tablet {
+        margin: auto;
+    }
+}

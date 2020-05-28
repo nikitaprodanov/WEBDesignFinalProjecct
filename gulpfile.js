@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 // Compile scss into css
 function style() {
     // where is my scss file
-    return gulp.src('./sass/**/*.sass')
+    return gulp.src('./scss/**/*.scss')
     // pass that file through sass compiler
     .pipe(sass())
     //  where do I save the compiled CSS
@@ -21,7 +21,7 @@ function watch() {
         }
     });
 
-    gulp.watch('./sass/**/*.sass', style);
+    gulp.watch('./scss/**/*.scss', style);
     gulp.watch('./*html').on('change', browserSync.reload);
     gulp.watch('./*.js').on('change', browserSync.reload);
 }
