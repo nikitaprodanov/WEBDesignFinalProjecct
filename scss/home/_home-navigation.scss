@@ -1,0 +1,30 @@
+.navigation {
+    color: color(text);
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+
+    @import 'home-user';
+
+    img {
+        width: 40px;
+        cursor: pointer;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    
+
+    @import 'home-nav-links';
+
+    @include desktop {
+        width: 20%;
+        background: color(secondary);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+}

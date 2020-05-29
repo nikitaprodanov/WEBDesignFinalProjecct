@@ -18,7 +18,8 @@ body {
   background: -webkit-linear-gradient(45deg, #95e675 0%, #17b978 100%);
   background: linear-gradient(45deg, #95e675 0%, #17b978 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-attachment: fixed; }
 
 nav {
   position: relative;
@@ -276,7 +277,8 @@ a {
   @media (max-width: 780px) {
     .registration-form {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      height: auto; } }
   .registration-form .form-fields {
     display: flex;
     flex-direction: column;
