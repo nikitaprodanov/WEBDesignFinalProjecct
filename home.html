@@ -4,15 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/home/home.css">
-        <title>SOFIT-19-HOME</title>
+        <title>HOME</title>
     </head>
     <body>
-        <div class="site-container">
-            <h1>simbol</h1>
-            <h1>simbol</h1>
-            <h1>simbol</h1>
-            <h1>simbol</h1>
-            <h1>simbol</h1>
+        <div class="navigation">
+            <div class="user">
+                <div id="avatar"></div>
+                <figcaption>Johnny Doe</figcaption>
+            </div>
+            <img src="./images/menu.svg">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+        <main>
+            <h1>I'm a designer of things</h1>
+            <p>You design this thing and then make it a reality in the browser, oh yeah.. Imagine the possibilities of your new skill.</p>
+
+            <a href="#" class="cta">my portfolio</a>
+        </main>
+
+
+        <script>
+        
+            (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('img');
+                
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        
+        </script>
     </body>
 </html>

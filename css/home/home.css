@@ -14,8 +14,14 @@ body {
   background: -webkit-linear-gradient(45deg, #95e675 0%, #17b978 100%);
   background: linear-gradient(45deg, #95e675 0%, #17b978 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-attachment: fixed; }
 
-.site-container {
-  display: flex;
-  flex-direction: column; }
+.navigation {
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 2em; }
+
+.user {
+  margin: 0px; }
