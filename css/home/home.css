@@ -16,12 +16,68 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
   overflow-x: hidden;
   background-attachment: fixed; }
+  @media (min-width: 768px) {
+    body {
+      display: grid;
+      grid-template-columns: 20% auto;
+      padding: 2em; } }
 
 .navigation {
   color: #fff;
   display: grid;
   grid-template-columns: auto 40px;
   padding: 2em; }
+  .navigation .user {
+    margin: 0px; }
+  .navigation img {
+    width: 40px;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .navigation img {
+        display: none; } }
+  .navigation .username {
+    font-size: 1.3em;
+    font-weight: bold; }
+  .navigation .links {
+    background: #fff; }
+    .navigation .links .active {
+      position: absolute;
+      display: block;
+      background: #fff;
+      width: 50%;
+      left: 0;
+      top: 0;
+      height: 100%; }
+    .navigation .links ul {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .navigation .links ul a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .8em;
+        display: block;
+        padding: 1.5em 3em;
+        background-color: rgba(255, 255, 255, 0.35);
+        color: #000; }
 
-.user {
-  margin: 0px; }
+.main-section {
+  background: #fff;
+  padding: 1em 1.4em; }
+  .main-section h1 {
+    margin: 0; }
+  .main-section p {
+    font-size: 1.1em;
+    line-height: 1.5em; }
+  .main-section .cta {
+    display: block;
+    color: #fff;
+    background: #0E7FFF;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0; }

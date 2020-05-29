@@ -3,4 +3,22 @@
     display: grid;
     grid-template-columns: auto 40px;
     padding: 2em;
+
+    @import 'home-user';
+
+    img {
+        width: 40px;
+        cursor: pointer;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .username {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    @import 'home-nav-links';
 }

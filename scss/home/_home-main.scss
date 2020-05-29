@@ -1,0 +1,26 @@
+.main-section {
+    background: #fff;
+    padding: 1em 1.4em;
+
+    h1 {
+        margin: 0;
+    }
+    
+    p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    .cta {
+        display: block;
+        color: #fff;
+        background: #0E7FFF;
+        text-decoration: none;
+        padding: 8px 50px;
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 4px;
+        margin: 2em 0;
+    }
+}
