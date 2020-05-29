@@ -26,5 +26,21 @@
             background-color: rgba(255,255,255,.35);
             color: #000;
         }
+
+        @include desktop {
+            display: block;
+            margin-top: 2em;
+            position: relative !important;
+            background: none !important;
+            width: 100% !important;
+
+            a:hover {
+                background-color: #fff;
+            }
+        }
+    }
+
+    @include desktop {
+        background: none;
     }
 }

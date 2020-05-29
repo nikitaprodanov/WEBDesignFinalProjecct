@@ -29,15 +29,26 @@ body {
   padding: 2em; }
   .navigation .user {
     margin: 0px; }
+    .navigation .user .username {
+      font-size: 1.3em;
+      font-weight: bold; }
+      @media (min-width: 768px) {
+        .navigation .user .username {
+          text-align: center;
+          color: #000; } }
+    @media (min-width: 768px) {
+      .navigation .user .avatar {
+        border-radius: 50%;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto; } }
   .navigation img {
     width: 40px;
     cursor: pointer; }
     @media (min-width: 768px) {
       .navigation img {
         display: none; } }
-  .navigation .username {
-    font-size: 1.3em;
-    font-weight: bold; }
   .navigation .links {
     background: #fff; }
     .navigation .links .active {
@@ -61,15 +72,40 @@ body {
         padding: 1.5em 3em;
         background-color: rgba(255, 255, 255, 0.35);
         color: #000; }
+      @media (min-width: 768px) {
+        .navigation .links ul {
+          display: block;
+          margin-top: 2em;
+          position: relative !important;
+          background: none !important;
+          width: 100% !important; }
+          .navigation .links ul a:hover {
+            background-color: #fff; } }
+    @media (min-width: 768px) {
+      .navigation .links {
+        background: none; } }
+  @media (min-width: 768px) {
+    .navigation {
+      background: #DCE1F6;
+      grid-template-columns: auto;
+      grid-template-rows: 20% auto;
+      padding: 0; } }
 
 .main-section {
   background: #fff;
   padding: 1em 1.4em; }
   .main-section h1 {
     margin: 0; }
+    @media (min-width: 768px) {
+      .main-section h1 {
+        font-size: 3em;
+        margin-top: 2em; } }
   .main-section p {
     font-size: 1.1em;
     line-height: 1.5em; }
+    @media (min-width: 768px) {
+      .main-section p {
+        font-size: 1.5em; } }
   .main-section .cta {
     display: block;
     color: #fff;
@@ -81,3 +117,13 @@ body {
     font-weight: bold;
     border-radius: 4px;
     margin: 2em 0; }
+    @media (min-width: 768px) {
+      .main-section .cta {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em; } }
+  @media (min-width: 768px) {
+    .main-section {
+      padding: 4em;
+      background: white url("../images/bg.svg") no-repeat bottom right;
+      background-size: 70%; } }

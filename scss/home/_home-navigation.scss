@@ -15,10 +15,14 @@
         }
     }
 
-    .username {
-        font-size: 1.3em;
-        font-weight: bold;
-    }
+    
 
     @import 'home-nav-links';
+
+    @include desktop {
+        background: #DCE1F6;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
 }
