@@ -1,47 +1,25 @@
 .main-section {
-    background: #fff;
+    background: color(light-primary);
     padding: 1em 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    h1 {
-        margin: 0;
-
+    .training-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
         @include desktop {
-            font-size: 3em;
-            margin-top: 2em;
-        }
-    }
-    
-    p {
-        font-size: 1.1em;
-        line-height: 1.5em;
-
-        @include desktop {
-            font-size: 1.5em;
-        }
-    }
-
-    .cta {
-        display: block;
-        color: #fff;
-        background: #0E7FFF;
-        text-decoration: none;
-        padding: 8px 50px;
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 4px;
-        margin: 2em 0;
-
-        @include desktop {
-            display: inline-block;
-            font-size: 1.3em;
-            padding: .8em 3em;
+            flex-direction: row;
+            justify-content: center;
         }
     }
 
     @include desktop {
         padding: 4em;
-        background: white url('../images/bg.svg') no-repeat bottom right;
+        background: color(light-primary);
         background-size: 70%;
+        width: 100%;
     }
 }

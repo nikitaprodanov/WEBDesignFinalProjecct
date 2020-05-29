@@ -1,7 +1,7 @@
 .navigation {
-    color: #fff;
-    display: grid;
-    grid-template-columns: auto 40px;
+    color: color(text);
+    display: flex;
+    justify-content: space-around;
     padding: 2em;
 
     @import 'home-user';
@@ -20,9 +20,11 @@
     @import 'home-nav-links';
 
     @include desktop {
-        background: #DCE1F6;
-        grid-template-columns: auto;
-        grid-template-rows: 20% auto;
+        width: 20%;
+        background: color(secondary);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         padding: 0;
     }
 }

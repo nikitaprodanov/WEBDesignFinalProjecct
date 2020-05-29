@@ -4,7 +4,7 @@
     .active {
         position: absolute;
         display: block;
-        background: #fff;
+        background: color(secondary);
         width: 50%;
         left: 0;
         top: 0;
@@ -23,24 +23,25 @@
             font-size: .8em;
             display: block;
             padding: 1.5em 3em;
-            background-color: rgba(255,255,255,.35);
-            color: #000;
+            background-color: color(light-primary);
+            color: color(text);
+        }
+        
+        a:hover {
+            background-color: color(card-content);
         }
 
         @include desktop {
             display: block;
-            margin-top: 2em;
             position: relative !important;
             background: none !important;
             width: 100% !important;
+            text-align: center;
 
-            a:hover {
-                background-color: #fff;
-            }
         }
     }
 
     @include desktop {
-        background: none;
+        width: 100%;
     }
 }
