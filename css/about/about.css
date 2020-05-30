@@ -16,6 +16,8 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
   overflow-x: hidden;
   background-attachment: fixed; }
+  body .header {
+    background-color: #17b978; }
   body .logo {
     color: #000;
     text-decoration: none;
@@ -27,9 +29,8 @@ body {
 
 @media (min-width: 768px) {
   .main-section {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "primary card"; } }
+    display: flex;
+    flex-direction: row-reverse; } }
 
 .main-section .card {
   background: #53A1A8;
@@ -38,12 +39,6 @@ body {
   border-radius: 15px;
   box-shadow: 0 10px 30px #086972;
   width: 70%; }
-  @media (min-width: 768px) {
-    .main-section .card {
-      grid-area: card;
-      height: fit-content;
-      align-self: center;
-      margin: 1em; } }
   .main-section .card ul {
     list-style-type: none;
     margin: 0;
@@ -59,6 +54,12 @@ body {
         @media (min-width: 768px) {
           .main-section .card ul li strong {
             font-size: 2vw; } }
+  @media (min-width: 768px) {
+    .main-section .card {
+      grid-area: card;
+      height: fit-content;
+      align-self: center;
+      margin: 1em; } }
 
 .main-section .primary {
   color: #000;
@@ -68,14 +69,15 @@ body {
   flex-direction: column; }
   @media (min-width: 768px) {
     .main-section .primary {
-      grid-area: primary;
+      height: 70vh;
+      justify-content: space-around;
       text-align: left;
       margin: 4em 0 0 4em; } }
   .main-section .primary h1 {
     font-size: 15vw; }
     @media (min-width: 768px) {
       .main-section .primary h1 {
-        width: 50%;
+        width: 100%;
         font-size: 3vw;
         line-height: .9em; } }
   .main-section .primary p {

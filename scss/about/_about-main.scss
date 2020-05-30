@@ -1,10 +1,8 @@
 .main-section {
 
     @include desktop {
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: 
-            "primary card";
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .card {
@@ -15,6 +13,8 @@
         box-shadow: 0 10px 30px color(card-contrast);
         width: 70%;
 
+        @import 'about-card';
+
         @include desktop {
             grid-area: card;
             height: fit-content;
@@ -22,27 +22,6 @@
             margin: 1em;
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-
-            li {
-                margin-bottom: 10px;
-
-                strong {
-                    display: inline-block;
-                    margin-left: auto;
-                    margin-top: 10px;
-                    font-size: 4vw;
-                    width: auto;
-
-                    @include desktop {
-                        font-size: 2vw;
-                    }
-                }
-            }
-        }
     }
 
     .primary {
@@ -53,50 +32,12 @@
         flex-direction: column;
 
         @include desktop {
-            grid-area: primary;
+            height: 70vh;
+            justify-content: space-around;
             text-align: left;
             margin: 4em 0 0 4em;
         }
 
-        h1 {
-            font-size: 15vw;
-            // margin-top: auto;
-            // text-transform: uppercase;
-
-            @include desktop {
-                width: 50%;
-                font-size: 3vw;
-                line-height: .9em;
-            }
-        }
-
-        p {
-            font-size: 8vw;
-
-            @include desktop {
-                font-size: 1.5vw;
-            }
-        }
-
-        a {
-            color: color(light-primary);
-            border-radius: 15px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            background-color: color(card-contrast);
-            display: block;
-            text-align: center;
-            margin: 50px auto 0 auto;
-            padding: 15px 0 15px 15px;
-            width: auto;
-            font-size: 5vw;
-
-            @include desktop {
-                display: inline-block;
-                padding: 15px 15px * 4;
-                font-size: 2vw;
-            }
-        }
+        @import 'about-primary-content';
     }
 }
