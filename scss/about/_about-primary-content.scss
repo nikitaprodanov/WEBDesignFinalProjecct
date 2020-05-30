@@ -1,0 +1,38 @@
+h1 {
+    font-size: 15vw;
+
+    @include desktop {
+        width: 100%;
+        font-size: 3vw;
+        line-height: .9em;
+    }
+}
+
+p {
+    font-size: 8vw;
+
+    @include desktop {
+        font-size: 1.5vw;
+    }
+}
+
+a {
+    color: color(light-primary);
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: color(card-contrast);
+    display: block;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    padding: 15px 0 15px 15px;
+    width: auto;
+    font-size: 5vw;
+
+    @include desktop {
+        display: inline-block;
+        padding: 15px 15px * 4;
+        font-size: 2vw;
+    }
+}
