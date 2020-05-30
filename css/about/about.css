@@ -16,3 +16,86 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
   overflow-x: hidden;
   background-attachment: fixed; }
+  body .logo {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 5vw; }
+    @media (min-width: 768px) {
+      body .logo {
+        font-size: 2vw; } }
+
+@media (min-width: 768px) {
+  .main-section {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "primary card"; } }
+
+.main-section .card {
+  background: #fff;
+  padding: 20px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 70%; }
+  @media (min-width: 768px) {
+    .main-section .card {
+      grid-area: card;
+      height: fit-content;
+      align-self: center;
+      margin: 1em; } }
+  .main-section .card ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .main-section .card ul li {
+      margin-bottom: 10px; }
+      .main-section .card ul li strong {
+        display: inline-block;
+        margin-left: auto;
+        margin-top: 10px;
+        font-size: 4vw;
+        width: auto; }
+        @media (min-width: 768px) {
+          .main-section .card ul li strong {
+            font-size: 2vw; } }
+
+.main-section .primary {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .main-section .primary {
+      grid-area: primary;
+      text-align: left;
+      margin: 4em 0 0 4em; } }
+  .main-section .primary h1 {
+    font-size: 15vw; }
+    @media (min-width: 768px) {
+      .main-section .primary h1 {
+        width: 30%;
+        font-size: 4em;
+        line-height: .9em; } }
+  .main-section .primary p {
+    font-size: 8vw; }
+    @media (min-width: 768px) {
+      .main-section .primary p {
+        font-size: 3vw; } }
+  .main-section .primary a {
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    padding: 15px 0 15px 15px;
+    width: auto;
+    font-size: 5vw; }
+    @media (min-width: 768px) {
+      .main-section .primary a {
+        display: inline-block;
+        padding: 15px 60px;
+        font-size: 2vw; } }
