@@ -23,13 +23,13 @@ body{
     background-attachment: fixed;
 
     .logo {
-        color: #fff;
+        color: color(text);
         text-decoration: none;
         padding: 15px;
         font-size: 5vw;
 
         @include desktop {
-            font-size: 2vw;
+            font-size: 1vw;
         }
         // display: block;
     }
