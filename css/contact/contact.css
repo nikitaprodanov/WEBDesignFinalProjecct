@@ -16,3 +16,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
   overflow-x: hidden;
   background-attachment: fixed; }
+
+.contact-form {
+  background-color: #086972;
+  display: flex;
+  flex-direction: column; }
+  .contact-form .field {
+    display: flex; }

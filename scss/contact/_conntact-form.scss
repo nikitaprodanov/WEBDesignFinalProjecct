@@ -1,0 +1,7 @@
+.contact-form {
+    background-color: color(card-contrast);
+    display: flex;
+    flex-direction: column;
+
+    @import 'contact-field';
+}
