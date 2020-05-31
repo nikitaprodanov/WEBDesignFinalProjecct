@@ -2,6 +2,49 @@
     background-color: color(card-contrast);
     display: flex;
     flex-direction: column;
+    width: 85%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 50px color(card-content);
+    align-items: center;
+
+    h1 {
+        margin-top: 0;
+        font-weight: bolder;
+        color: color(text-white);
+
+        @include thin-af {
+            font-size: 10vw;
+        }
+    }
 
     @import 'contact-field';
+
+    .button {
+        text-decoration: none;
+        color: color(text-white);
+        background-color: color(card-content);
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 10px;
+        transition: font-size .3s ease-in;
+
+        @include thin-af {
+            font-size: 4vw;
+        }
+    }
+
+    .button:hover {
+        font-size: 30px;
+
+        @include thin-af {
+            font-size: 4.5vw;
+        }
+    }
 }
