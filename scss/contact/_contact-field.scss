@@ -1,0 +1,49 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid color(card-content);
+    margin: 8px 0;
+    padding: max(12px) max(18px);
+    border-radius: 10px;
+
+    .label {
+        text-transform: uppercase;
+        color: color(text-white);
+        font-size: 14px;
+        transition: font-size 0.3s ease-in;
+
+        @include thin-af {
+            font-size: 4vw;
+        }
+    }
+
+    .input {
+        width: 100%;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 18px;
+        margin-top: 6px;
+        color: color(text-white);
+
+        @include thin-af {
+            font-size: 4.5vw;
+        }
+    }
+
+    ::placeholder {
+        color: color(card-content);
+        opacity: 1;
+    }
+}
+
+.field:hover {
+    .label {
+        font-size: 20px;
+
+        @include thin-af {
+            font-size: 5vw;
+        }
+    }
+}
