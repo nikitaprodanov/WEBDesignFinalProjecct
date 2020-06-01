@@ -1,5 +1,0 @@
-@mixin desktop {
-    @media (min-width: #{screen(desktop)}){
-        @content;
-    }
-}

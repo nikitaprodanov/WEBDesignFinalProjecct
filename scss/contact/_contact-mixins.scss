@@ -1,5 +1,0 @@
-@mixin thin-af {
-    @media (max-width: #{screen(thin-af)}){
-        @content;
-    }
-}

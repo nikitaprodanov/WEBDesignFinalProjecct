@@ -12,6 +12,21 @@ body {
   box-sizing: border-box;
   font-family: 'Acme'; }
 
+.footer-container {
+  background-color: #17b978;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1; }
+  .footer-container h3 {
+    margin-right: 10vw; }
+  .footer-container h4 {
+    margin-left: 10vw; }
+
 body {
   background: #95e675;
   background: -moz-linear-gradient(45deg, #95e675 0%, #17b978 100%);
@@ -125,7 +140,7 @@ a {
   flex-direction: column;
   justify-content: center; }
   .info-board .information {
-    background-color: rgba(178, 231, 157, 0.45);
+    background-color: rgba(178, 231, 157, 0.7);
     width: 50vw;
     line-height: 25px;
     padding: 5vh; }
@@ -291,18 +306,3 @@ a {
     @media (max-width: 1024px) {
       .registration-form .form-fields {
         margin: auto; } }
-
-.footer-container {
-  background-color: #17b978;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  z-index: -1; }
-  .footer-container h3 {
-    margin-right: 10vw; }
-  .footer-container h4 {
-    margin-left: 10vw; }
