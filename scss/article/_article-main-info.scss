@@ -1,0 +1,28 @@
+img {
+    width: 100%;
+    margin: 10px;
+
+    @include mobile {
+        margin: 10px auto;
+    }
+}
+
+.text {
+    h3 {
+        margin: 10px;
+        font-size: 5vw;
+
+        @include mobile {
+            font-size: 8vw;
+        }
+    }
+
+    p {
+        margin: 10px;
+        font-size: 1.5vw;
+
+        @include mobile {
+            font-size: 3vw;
+        }
+    }
+}

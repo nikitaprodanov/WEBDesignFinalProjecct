@@ -1,0 +1,11 @@
+.main-section {
+    .paragraph {
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        @import 'article-main-info';
+    }
+}
