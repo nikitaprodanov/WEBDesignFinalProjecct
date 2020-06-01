@@ -1,0 +1,50 @@
+.card {
+    width: 50vw;
+    height: 50vw;
+    margin: 5vw;
+    border-radius: 25px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .title {
+       display: none;
+    }
+    
+    @include desktop {
+        width: 20vw;
+        height: 20vw;
+        margin: 2vw;
+
+        .title {
+            display: none;
+            transition: 5s;
+        }
+
+    }
+}
+
+.card:hover {
+    .title {
+        display: block;
+        height: 12vw;
+        width: 50vw;
+        text-align: center;
+        background-color: color(light-primary);
+        border-radius: 25px;
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    @include desktop {
+        .title {
+            display: block;
+            width: 20vw;
+            height: 5vw;
+        }
+    }
+}

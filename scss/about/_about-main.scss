@@ -1,0 +1,43 @@
+.main-section {
+
+    @include desktop {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .card {
+        background: color(card-content);
+        padding: 20px;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px color(card-contrast);
+        width: 70%;
+
+        @import 'about-card';
+
+        @include desktop {
+            grid-area: card;
+            height: fit-content;
+            align-self: center;
+            margin: 1em;
+        }
+
+    }
+
+    .primary {
+        color: color(text);
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            height: 70vh;
+            justify-content: space-around;
+            text-align: left;
+            margin: 4em 0 0 4em;
+        }
+
+        @import 'about-primary-content';
+    }
+}

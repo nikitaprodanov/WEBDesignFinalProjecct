@@ -6,4 +6,19 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
     overflow-x: hidden;
     background-attachment: fixed;
+
+    .header {
+        background-color: color(secondary);
+    }
+
+    .logo {
+        color: color(text);
+        text-decoration: none;
+        padding: 15px;
+        font-size: 5vw;
+
+        @include desktop {
+            font-size: 1vw;
+        }
+    }
 }

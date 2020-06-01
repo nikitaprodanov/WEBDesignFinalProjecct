@@ -1,0 +1,178 @@
+html,
+body {
+  height: 100%; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Acme'; }
+
+.footer-container {
+  background-color: #17b978;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1; }
+  .footer-container h3 {
+    margin-right: 10vw; }
+  .footer-container h4 {
+    margin-left: 10vw; }
+
+body {
+  background: #95e675;
+  background: -moz-linear-gradient(45deg, #95e675 0%, #17b978 100%);
+  background: -webkit-linear-gradient(45deg, #95e675 0%, #17b978 100%);
+  background: linear-gradient(45deg, #95e675 0%, #17b978 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95e675', endColorstr='#17b978',GradientType=1 );
+  overflow-x: hidden;
+  background-attachment: fixed; }
+  @media (min-width: 768px) {
+    body {
+      display: flex;
+      width: 100%;
+      padding: 2vw; } }
+
+.navigation {
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em; }
+  .navigation .user {
+    margin: 0px; }
+    .navigation .user .username {
+      font-size: 1.3em;
+      font-weight: bold; }
+      @media (min-width: 768px) {
+        .navigation .user .username {
+          text-align: center;
+          color: #000; } }
+    @media (min-width: 768px) {
+      .navigation .user .avatar {
+        border-radius: 50%;
+        background: #95e675;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto; } }
+  .navigation img {
+    width: 40px;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .navigation img {
+        display: none; } }
+  .navigation .links {
+    background: #fff; }
+    .navigation .links .active {
+      position: absolute;
+      display: block;
+      background: #17b978;
+      width: 50%;
+      left: 0;
+      top: 0;
+      height: 100%; }
+    .navigation .links ul {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .navigation .links ul a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .8em;
+        display: block;
+        padding: 1.5em 3em;
+        background-color: rgba(178, 231, 157, 0.7);
+        color: #000; }
+      .navigation .links ul a:hover {
+        background-color: #53A1A8; }
+      @media (min-width: 768px) {
+        .navigation .links ul {
+          display: block;
+          position: relative !important;
+          background: none !important;
+          width: 100% !important;
+          text-align: center; } }
+    @media (min-width: 768px) {
+      .navigation .links {
+        width: 100%; } }
+  @media (min-width: 768px) {
+    .navigation {
+      width: 20%;
+      background: #17b978;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0; } }
+
+.main-section {
+  background: rgba(178, 231, 157, 0.7);
+  padding: 1em 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .main-section .home-text {
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .main-section .home-text h1 {
+      margin: 1vw 1vw 1vw 0px;
+      font-weight: bolder;
+      text-transform: uppercase; }
+    .main-section .home-text p {
+      font-weight: bold; }
+    @media (min-width: 768px) {
+      .main-section .home-text {
+        margin-left: 2vw; } }
+  .main-section .training-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-section .training-cards .card {
+      width: 50vw;
+      height: 50vw;
+      margin: 5vw;
+      border-radius: 25px; }
+      .main-section .training-cards .card img {
+        height: 100%;
+        width: 100%;
+        border-radius: 25px; }
+      .main-section .training-cards .card .title {
+        display: none; }
+      @media (min-width: 768px) {
+        .main-section .training-cards .card {
+          width: 20vw;
+          height: 20vw;
+          margin: 2vw; }
+          .main-section .training-cards .card .title {
+            display: none;
+            transition: 5s; } }
+    .main-section .training-cards .card:hover .title {
+      display: block;
+      height: 12vw;
+      width: 50vw;
+      text-align: center;
+      background-color: rgba(178, 231, 157, 0.7);
+      border-radius: 25px;
+      position: absolute;
+      text-transform: uppercase;
+      font-weight: bold; }
+    @media (min-width: 768px) {
+      .main-section .training-cards .card:hover .title {
+        display: block;
+        width: 20vw;
+        height: 5vw; } }
+    @media (min-width: 768px) {
+      .main-section .training-cards {
+        flex-direction: row;
+        justify-content: space-around; } }
+  @media (min-width: 768px) {
+    .main-section {
+      padding: 4em;
+      background: rgba(178, 231, 157, 0.7);
+      background-size: 70%;
+      width: 100%; } }

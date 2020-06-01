@@ -1,0 +1,23 @@
+@mixin thin-af {
+    @media (max-width: #{screen(thin-af)}){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{screen(desktop)}){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{screen(mobile)}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{screen(tablet)}){
+        @content;
+    }
+}
