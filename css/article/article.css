@@ -101,7 +101,7 @@ a {
     font-size: 1.5vw; }
     @media (max-width: 780px) {
       .main-section .paragraph .text p {
-        font-size: 3vw; } }
+        font-size: 4vw; } }
 
 .footer-container {
   background-color: #17b978;
