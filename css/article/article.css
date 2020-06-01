@@ -89,7 +89,7 @@ a {
     margin: 10px; }
     @media (max-width: 780px) {
       .main-section .paragraph img {
-        margin: 10px auto; } }
+        margin: 0 auto 10px auto; } }
   .main-section .paragraph .text h3 {
     margin: 10px;
     font-size: 5vw; }
@@ -102,3 +102,18 @@ a {
     @media (max-width: 780px) {
       .main-section .paragraph .text p {
         font-size: 3vw; } }
+
+.footer-container {
+  background-color: #17b978;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1; }
+  .footer-container h3 {
+    margin-right: 10vw; }
+  .footer-container h4 {
+    margin-left: 10vw; }
