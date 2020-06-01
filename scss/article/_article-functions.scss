@@ -1,0 +1,7 @@
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name)
+};
+
+@function screen($screen-size) {
+    @return map-get($map: $screens, $key: $screen-size)
+};
