@@ -3,7 +3,7 @@ img {
     margin: 10px;
 
     @include mobile {
-        margin: 10px auto;
+        margin: 0 auto 10px auto;
     }
 }
 
@@ -22,7 +22,7 @@ img {
         font-size: 1.5vw;
 
         @include mobile {
-            font-size: 3vw;
+            font-size: 4vw;
         }
     }
 }
