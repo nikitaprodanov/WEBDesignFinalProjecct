@@ -125,7 +125,7 @@ a {
   flex-direction: column;
   justify-content: center; }
   .info-board .information {
-    background-color: rgba(178, 231, 157, 0.45);
+    background-color: rgba(178, 231, 157, 0.7);
     width: 50vw;
     line-height: 25px;
     padding: 5vh; }
