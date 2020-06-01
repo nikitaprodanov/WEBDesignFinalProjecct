@@ -78,3 +78,27 @@ a {
   height: 3px;
   background-color: #000;
   margin: 5px; }
+
+.main-section .paragraph {
+  display: flex; }
+  @media (max-width: 780px) {
+    .main-section .paragraph {
+      flex-direction: column; } }
+  .main-section .paragraph img {
+    width: 100%;
+    margin: 10px; }
+    @media (max-width: 780px) {
+      .main-section .paragraph img {
+        margin: 10px auto; } }
+  .main-section .paragraph .text h3 {
+    margin: 10px;
+    font-size: 5vw; }
+    @media (max-width: 780px) {
+      .main-section .paragraph .text h3 {
+        font-size: 8vw; } }
+  .main-section .paragraph .text p {
+    margin: 10px;
+    font-size: 1.5vw; }
+    @media (max-width: 780px) {
+      .main-section .paragraph .text p {
+        font-size: 3vw; } }
