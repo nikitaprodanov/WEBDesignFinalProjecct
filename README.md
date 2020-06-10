@@ -18,10 +18,9 @@ All used technologies:
 * [Gulp](https://gulpjs.com/)
 * [Sass](https://sass-lang.com/)
 * [Regular html, css and js](https://www.w3schools.com/whatis/default.asp)
-* Ние ползваме официалното [ArduinoIDE](https://www.arduino.cc/en/Main/Software) за разработката на софтуера. и езика [C++](https://en.wikipedia.org/wiki/C%2B%2B).
 
 
-## Dev status:
+## Dev stats:
 ![GitHub](https://img.shields.io/github/issues-pr/nikitaprodanov/WEBDesignFinalProjecct?color=green&style=for-the-badge)
 
 ![GitHub](https://img.shields.io/github/issues-pr-closed/nikitaprodanov/WEBDesignFinalProjecct?color=green&style=for-the-badge)
@@ -31,7 +30,7 @@ All used technologies:
 ![GitHub](https://img.shields.io/github/v/tag/nikitaprodanov/WEBDesignFinalProjecct?logo=github&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/release-date/nikitaprodanov/WEBDesignFinalProjecct?logo=github&style=for-the-badge)
 
-## Данни за репото:
+## Repo stats:
 ![GitHub](https://img.shields.io/github/forks/nikitaprodanov/WEBDesignFinalProjecct?style=social)
 
 ![GitHub](https://img.shields.io/github/stars/nikitaprodanov/WEBDesignFinalProjecct?style=social)
