@@ -25,7 +25,7 @@ All used technologies:
 
 ![GitHub](https://img.shields.io/github/issues-pr-closed/nikitaprodanov/WEBDesignFinalProjecct?color=green&style=for-the-badge)
 
-![GitHub](https://img.shields.io/github/last-commit/nikitaprodanov/WEBDesignFinalProjecct/develop?style=for-the-badge)
+![GitHub](https://img.shields.io/github/last-commit/nikitaprodanov/WEBDesignFinalProjecct/Nikita?style=for-the-badge)
 
 ![GitHub](https://img.shields.io/github/v/tag/nikitaprodanov/WEBDesignFinalProjecct?logo=github&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/release-date/nikitaprodanov/WEBDesignFinalProjecct?logo=github&style=for-the-badge)
