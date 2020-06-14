@@ -66,9 +66,13 @@ exports.watch = watch;```
 ![GitHub](https://img.shields.io/github/v/tag/nikitaprodanov/WEBDesignFinalProjecct?logo=github&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/release-date/nikitaprodanov/WEBDesignFinalProjecct?logo=github&style=for-the-badge)
 
+<img src="images/home_desk.png">
+
 ## Repo stats:
 ![GitHub](https://img.shields.io/github/forks/nikitaprodanov/WEBDesignFinalProjecct?style=social)
 
 ![GitHub](https://img.shields.io/github/stars/nikitaprodanov/WEBDesignFinalProjecct?style=social)
 
 ![GitHub](https://img.shields.io/github/watchers/nikitaprodanov/WEBDesignFinalProjecct?style=social)
+
+<img src="images/home_mobile.png">
