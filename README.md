@@ -1,6 +1,6 @@
 # *SOFIT-19*
 
-![Лого/Визия на проекта](screenshot_one.png)
+![Лого/Визия на проекта](images/screenshot_one.png)
 
 SOFIT-19 is the best site to keep your body in shape with the best exercises and nutrition plans. Private trainings with professional trainers, nutrition plans from the best dietologists customised for your fitness goals and stretching routines will turn your body in the best shape possible.
 
