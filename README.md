@@ -18,36 +18,36 @@ Just visit [the live demo](https://nikitaprodanov.github.io/WEBDesignFinalProjec
 All used technologies:
 * [Gulp](https://gulpjs.com/)
 
-'''    const gulp = require('gulp');
-    const sass = require('gulp-sass');
-    const browserSync = require('browser-sync').create();
+        const gulp = require('gulp');
+        const sass = require('gulp-sass');
+        const browserSync = require('browser-sync').create();
 
-    // Compile scss into css
-    function style() {
-        // where is my scss file
-        return gulp.src('./scss/**/*.scss')
-        // pass that file through sass compiler
-        .pipe(sass())
-        //  where do I save the compiled CSS
-        .pipe(gulp.dest('./css'))
-        // stream changes to all browsers
-        .pipe(browserSync.stream());
-    }
+        // Compile scss into css
+        function style() {
+            // where is my scss file
+            return gulp.src('./scss/**/*.scss')
+            // pass that file through sass compiler
+            .pipe(sass())
+            //  where do I save the compiled CSS
+            .pipe(gulp.dest('./css'))
+            // stream changes to all browsers
+            .pipe(browserSync.stream());
+        }
 
-    function watch() {
-        browserSync.init({
-            server: {
-                baseDir: './'
-            }
-        });
+        function watch() {
+            browserSync.init({
+                server: {
+                    baseDir: './'
+                }
+            });
 
-        gulp.watch('./scss/**/*.scss', style);
-        gulp.watch('./*html').on('change', browserSync.reload);
-        gulp.watch('./*.js').on('change', browserSync.reload);
-    }
+            gulp.watch('./scss/**/*.scss', style);
+            gulp.watch('./*html').on('change', browserSync.reload);
+            gulp.watch('./*.js').on('change', browserSync.reload);
+        }
 
-    exports.style = style;
-    exports.watch = watch;```
+        exports.style = style;
+        exports.watch = watch;
 
 * [Sass](https://sass-lang.com/)
 * [Regular html, css and js](https://www.w3schools.com/whatis/default.asp)
