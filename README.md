@@ -73,8 +73,5 @@ All used technologies:
 ![GitHub](https://img.shields.io/github/stars/nikitaprodanov/WEBDesignFinalProjecct?style=social)
 
 ![GitHub](https://img.shields.io/github/watchers/nikitaprodanov/WEBDesignFinalProjecct?style=social)
-<<<<<<< HEAD
 
 <img src="images/home_mobile.png">
-=======
->>>>>>> 233599cb8317688ad7c51966005621b55771c490
