@@ -1,10 +1,11 @@
 # *SOFIT-19*
 
-![Лого/Визия на проекта](images/screenshot_one.png)
+<img src="images/screenshot_one.png" width=1000>
 
 SOFIT-19 is the best site to keep your body in shape with the best exercises and nutrition plans. Private trainings with professional trainers, nutrition plans from the best dietologists customised for your fitness goals and stretching routines will turn your body in the best shape possible.
 
 ## How to use the project?
+<img src="images/phone_land_page.png">
 Just visit [the live demo](https://nikitaprodanov.github.io/WEBDesignFinalProjecct/).
 
 
