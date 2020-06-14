@@ -20,6 +20,8 @@ All used technologies:
 * [Sass](https://sass-lang.com/)
 * [Regular html, css and js](https://www.w3schools.com/whatis/default.asp)
 
+<img src="images/memberships.png">
+
 
 ## Dev stats:
 ![GitHub](https://img.shields.io/github/issues-pr/nikitaprodanov/WEBDesignFinalProjecct?color=green&style=for-the-badge)
